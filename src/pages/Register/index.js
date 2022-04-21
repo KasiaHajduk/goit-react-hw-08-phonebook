@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import FormInput from "../../components/FormInput";
 import Button from "../../components/Button";
 import { registerUser } from "../../store/slices/registerThunk";
@@ -16,7 +16,7 @@ const Register = () => {
   const [password, setPassword] = useState("");
 
   const dispatch = useDispatch();
-  const { token, loading } = useSelector((state) => state.auth);
+  const { loading } = useSelector((state) => state.auth);
 
   const handleRegister = async (e) => {
     e.preventDefault();

@@ -4,13 +4,7 @@ import Filter from "../../components/contactsComponents/Filter";
 import { nanoid } from "nanoid";
 import styled from "@emotion/styled";
 import { useDispatch, useSelector } from "react-redux";
-import {
-  fetchAsync,
-  selectContacts,
-  postAsync,
-  deleteAsync,
-  filterContacts,
-} from "../../features/contactsSlice";
+import { fetchAsync, selectContacts, postAsync, deleteAsync, filterContacts} from "../../features/contactsSlice";
 import { useEffect } from "react";
 import { selectToken } from "../../store/slices/auth";
 import { useNavigate } from "react-router-dom"

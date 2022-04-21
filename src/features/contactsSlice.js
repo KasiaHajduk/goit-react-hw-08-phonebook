@@ -1,7 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { fetchContacts, postContacts, deleteContact } from "./contactAPI";
-import { useSelector } from "react-redux";
-import { selectToken } from "../store/slices/auth";
 import api from "../services/api";
 
 const initialState = {

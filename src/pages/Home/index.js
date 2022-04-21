@@ -1,8 +1,4 @@
-import React, { useEffect} from 'react';
-import {signOut} from '../../store/slices/authThunk';
-import Button from '../../components/Button';
-import {fetchUserData} from '../../store/slices/authThunk'
-import { useSelector, useDispatch } from 'react-redux';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from '../Page.module.css';
 
